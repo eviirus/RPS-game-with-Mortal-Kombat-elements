@@ -1,0 +1,30 @@
+{
+    "counter-attacks": [
+      {
+        "name": "Fatal Fury",
+        "damage": 100,
+        "condition": ["rock", "rock", "paper", "paper"]
+      },
+      {
+        "name": "Stone Strike",
+        "damage": 85,
+        "condition": ["rock", "rock", "rock"]
+      },
+      {
+        "name": "Blazing Inferno",
+        "damage": 70,
+        "condition": ["rock", "paper", "scissors"]
+      },
+      {
+        "name": "Triple Scissors Slice",
+        "damage": 55,
+        "condition": ["scissors", "scissors", "scissors"]
+      },
+      {
+        "name": "Tornado Tempest",
+        "damage": 40,
+        "condition": ["paper", "paper", "paper"]
+      }
+    ]
+}
+  

@@ -1,0 +1,94 @@
+@import url('https://fonts.cdnfonts.com/css/mortal-kombat');
+
+body {
+    background-image: url(photos/main-menu.jpg);
+    background-size: cover;
+    font-family: 'Mortal Kombat 4', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-size: 1000%;
+    color: rgb(151, 35, 0);
+    text-shadow: 10px 10px 20px #000;
+    -webkit-text-stroke: 5px #000;
+    cursor: default;
+    margin-bottom: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 500px;
+    border: 2px solid rgb(255, 0, 0);
+    border-radius: 1px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.PvP {
+    background-image: url('photos/PvP.png');
+}
+
+.PvC {
+    background-image: url('photos/PvC.png');
+}
+
+.player-options {
+    font-family: 'Mortal Kombat 4', sans-serif;
+    font-size: 40px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background: none; 
+    color: rgb(255, 0, 0);
+    margin-top: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0;
+    width: 100%;
+    height: 100%; 
+}
+
+.player-options:hover{
+    background-color: rgba(75, 0, 0, 0.1);
+}
+
+#return{
+    width: 100%;
+    height: 60px;
+    font-size: 40px;
+    margin: 10px 0;
+    font-family: 'Mortal Kombat 4', sans-serif;
+    background-color: rgb(75, 0, 0, .4);
+    border: none;
+    color:rgb(255, 0, 0);
+    cursor: pointer;
+}
+
+#return:hover{
+    background-color: rgba(75, 0, 0, 0.6);
+}

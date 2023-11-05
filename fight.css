@@ -1,0 +1,451 @@
+@import url('https://fonts.cdnfonts.com/css/mortal-kombat');
+
+body {
+  background-image: url(photos/background.jpg);
+  background-size: cover;
+  color: #fff;
+  font-family: 'Mortal Kombat 4', sans-serif;
+}
+
+.round-indicators {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+  margin-top: 5px;
+}
+
+.indicator {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%; 
+  border: 2px solid white;
+  margin-left: 3px; 
+  display: inline-block;
+}
+
+.health-timer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  padding: 0 20px;
+  margin-top: 1%;
+  text-align: start;
+}
+
+.player-health{
+  width: 700px;
+  height: 25px;
+  border: 1px solid #ffffff;
+  background-color: none;
+  margin-top: -2%;
+}
+
+.computer-health{
+  width: 700px;
+  height: 25px;
+  border: 1px solid #ffffff;
+  background-color: none;
+  margin-top: -2%;
+}
+
+.health-bars {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: start;
+  padding: 0 20px;
+  margin-top: 0%;
+  flex-grow: 1;
+}
+
+.health-bar {
+  width: 700px;
+  height: 25px;
+  background-color: rgb(255, 174, 0);
+  position: relative;
+}
+
+.player-name {
+  font-size: 20px;
+  margin-bottom: -1.5%;
+  align-items: center;
+}
+
+#playerName{
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 2.2%;
+  align-items: center;
+}
+
+#player2Name{
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 2.2%;
+  align-items: center;
+  margin-top: 0.5%;
+}
+
+.images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 150px;
+}
+
+.computer img,
+.player img {
+  width: 75%;
+}
+
+.shakeComputer {
+  animation: shakeComputer 0.8s linear;
+}
+
+.shakePlayer {
+  animation: shakePlayer 0.8s linear;
+}
+
+.points {
+  margin: 2em 0;
+  text-align: center;
+}
+
+.computerPoints {
+  margin-left: 3em;
+}
+
+.playerPoints {
+  margin-right: 3em;
+}
+
+@keyframes shakeComputer {
+  0% {
+    transform: rotate(-30deg);
+  }
+  25% {
+    transform: rotate(30deg);
+  }
+  50% {
+    transform: rotate(-30deg);
+  }
+  75% {
+    transform: rotate(30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes shakePlayer {
+  0% {
+    transform: rotate(30deg);
+  }
+  25% {
+    transform: rotate(-30deg);
+  }
+  50% {
+    transform: rotate(30deg);
+  }
+  75% {
+    transform: rotate(-30deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.timer-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px; 
+}
+
+.timer {
+  width: 100px;
+  height: 100px;
+  border: 4px solid #ff0000;
+  border-radius: 50%;
+  position: relative;
+  margin: 0 auto;
+}
+
+.timer-content {
+  font-size: 30px;
+  line-height: 100px;
+  text-align: center;
+  color: #ff0000;
+}
+
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 10em;
+  text-align: center;
+}
+
+.buttons {
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+}
+
+.buttons.left-buttons {
+  margin-right: 2em; 
+}
+
+.buttons button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  margin: 10px;
+  text-align: center;
+  font-family: 'Mortal Kombat 4', sans-serif;
+  width: 150px;
+  font-size: 25px;
+  height: 50px;
+  white-space: nowrap;
+  outline: none;
+  transition: 0.2s all linear;
+  background-color: rgb(75, 0, 0, .4);
+  border: none;
+  color:rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  background-color: rgba(75, 0, 0, 0.9);
+}
+
+.options.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: -10%;
+  font-size: 30px;
+}
+
+.left-options{
+  margin-left: 10%;
+  width: max-content;
+  height: max-content;
+  background-color: rgb(75, 0, 0, .4);
+}
+
+.right-options{
+  margin-right: 10%;
+  width: max-content;
+  height: max-content;
+  background-color: rgb(75, 0, 0, .4);
+}
+
+.left-options:hover,
+.right-options:hover{
+  background-color: rgb(75, 0, 0, .6);
+}
+
+ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style: none;
+}
+
+li {
+  margin-right: 20px; 
+}
+
+.message-game-over,
+.message-round-over {
+  font-size: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0000;
+  position: absolute;
+  z-index: 1;
+  top: 12%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.question-image{
+  width: 50px;
+  height: 50px;
+  background: url("photos/question-mark.png") no-repeat center/cover;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  border: none;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.exit-image {
+  width: 50px;
+  height: 50px;
+  background: url("photos/exit.png") no-repeat center/cover;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border: none;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.message-winner{
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0000;
+  position: absolute;
+  z-index: 1;
+  top: 34%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#countdown3,
+#countdown2,
+#countdown1,
+#countdown{
+  font-size: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0000;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+#round{
+  font-size: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0000;
+  position: absolute;
+  z-index: 1;
+  top: 20%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.play-again-container{
+  width: 100%;
+  height: 179px;
+  background-color: #0f0909;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 50px;
+  color: rgb(255, 0, 0);
+  flex-direction: column;
+}
+
+.option button{
+  width: 100vw;
+  height: 40px;
+  font-size: 30px;
+  font-family: 'Mortal Kombat 4', sans-serif;
+  background-color: rgb(75, 0, 0, .4);
+  border: none;
+  cursor: pointer;
+  color: #ff0000;
+  margin: 100px, 0;
+}
+
+.option button:hover{
+  background-color: rgb(75, 0, 0, .6);
+}
+
+.attack {
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0000;
+  position: absolute;
+  z-index: 1;
+  top: 15%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.attack-hp {
+  font-size: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff0000;
+  position: absolute;
+  z-index: 1;
+  top: 25%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.attacks-container {
+  z-index: 1;
+  position: absolute;
+  background-color: rgb(75, 0, 0, .8);
+  width: 60vw;
+  height: 32vw;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  justify-content: flex-start; /* Start from the top */
+  align-items: center;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.title {
+  font-size: 50px;
+  color: #ff0000;
+  margin-bottom: 20px; 
+}
+
+.attacks-menu p {
+  margin: 0; 
+}
+
+.attacks-menu p strong {
+  display: inline-block; 
+  width: 80px; 
+  font-weight: bold;
+}
+
+.attacks-menu p span {
+  display: inline-block; 
+  margin-left: 10px; 
+}
+
+.description{
+  font-size: 25px;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="fight.css">
+  <title>FIGHT</title>
+</head>
+<body>
+  <div class="container">
+    <div class="player-name" id="playerName">Player</div>
+    <div class="player-name" id="player2Name">Computer</div>
+    <div class="health-timer-container">
+      <div class="health-bars">
+        <div class="player-health">
+          <div class="health-bar" id="playerHealth"></div>
+          <div class="round-indicators">
+            <div id="indicator1" class="indicator"></div>
+            <div id="indicator2" class="indicator"></div>
+            <div id="indicator3" class="indicator"></div>
+            <div id="indicator4" class="indicator"></div>
+            <div id="indicator5" class="indicator"></div>
+            <div id="indicator6" class="indicator"></div>
+            <div id="indicator7" class="indicator"></div>
+            <div id="indicator8" class="indicator"></div>
+            <div id="indicator9" class="indicator"></div>
+            <div id="indicator10" class="indicator"></div>
+          </div>
+        </div>
+        <div class="timer-container">
+          <div class="timer">
+            <div class="timer-content" id="timer">30</div>
+          </div>
+        </div>
+        <div class="computer-health">
+          <div class="health-bar" id="computerHealth"></div>
+          <div class="round-indicators">
+            <div id="computer-indicator1" class="indicator"></div>
+            <div id="computer-indicator2" class="indicator"></div>
+            <div id="computer-indicator3" class="indicator"></div>
+            <div id="computer-indicator4" class="indicator"></div>
+            <div id="computer-indicator5" class="indicator"></div>
+            <div id="computer-indicator6" class="indicator"></div>
+            <div id="computer-indicator7" class="indicator"></div>
+            <div id="computer-indicator8" class="indicator"></div>
+            <div id="computer-indicator9" class="indicator"></div>
+            <div id="computer-indicator10" class="indicator"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="message-game-over">GAME OVER</div>
+    <div class="message-round-over">ROUND OVER</div>
+    <div class="message-winner">PLAYER WINS</div>
+    <div id="round">ROUND 1</div>
+    <div id="countdown3">3</div>
+    <div id="countdown2">2</div>
+    <div id="countdown1">1</div>
+    <div id="countdown">FIGHT!</div>
+    <div class="attack" id="attackName">text</div>
+    <div class="attack-hp" id="attackDamage">text</div>
+    <div class="attacks-container">
+      <div class="attacks-menu">
+        <div class="title">Counter Attacks</div>
+        <div class="description">
+          <p>Name: <span class="attack-name">Attack Name 1</span></p>
+          <p>Damage: <span class="damage">10</span></p>
+          <p>Condition: <span class="condition">Normal</span></p>
+          <br>
+          <p>Name: <span class="attack-name">Attack Name 2</span></p>
+          <p>Damage: <span class="damage">10</span></p>
+          <p>Condition: <span class="condition">Normal</span></p>
+          <br>
+          <p>Name: <span class="attack-name">Attack Name 3</span></p>
+          <p>Damage: <span class="damage">10</span></p>
+          <p>Condition: <span class="condition">Normal</span></p>
+          <br>
+          <p>Name: <span class="attack-name">Attack Name 4</span></p>
+          <p>Damage: <span class="damage">10</span></p>
+          <p>Condition: <span class="condition">Normal</span></p>
+          <br>
+          <p>Name: <span class="attack-name">Attack Name 5</span></p>
+          <p>Damage: <span class="damage">10</span></p>
+          <p>Condition: <span class="condition">Normal</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="play-again-container">
+      <div class="play-again">Do You Want To Play Again?</div>
+      <div class="option">
+        <button id="yes" type="button">YES</button>
+        <button id="no" type="button" >NO</button>
+      </div>
+    </div>
+    <div class="images">
+      <div class="player">
+        <img src="photos/rockPlayer.png" />
+      </div>
+      <div class="computer">
+        <img src="photos/rockComputer.png" />
+      </div>
+    </div>
+    <div class="buttons-container">
+      <div class="buttons left-buttons">
+        <button type="button">ROCK</button>
+        <button type="button">PAPER</button>
+        <button type="button">SCISSORS</button>
+      </div>
+    </div>
+    <div class="options container">
+      <div class="left-options">
+        <ul>
+          <li id="list">Q - ROCK</li>
+          <li id="list">W - PAPER</li>
+          <li id="list">E - SCISSORS</li>
+        </ul>
+      </div>
+      <div class="right-options">
+        <ul>
+          <li id="list">I - ROCK</li>
+          <li id="list">O - PAPER</li>
+          <li id="list">P - SCISSORS</li>
+        </ul>
+      </div>
+    </div>
+    <div class="question-image">
+      <button></button>
+    </div>
+    <div class="exit-image">
+      <button></button>
+    </div>
+  </div>
+  <script src="fight-variables.js"></script>
+  <script src="_base.js"></script>
+  <script src="linkedlist.js"></script>
+  <script src="queue.js"></script>
+  <script src="health-bar.js"></script>
+  <script src="fight-external.js"></script>
+  <script src="fight-attacks.js"></script>
+  <script src="fight-history.js"></script>
+  <script src="fight.js"></script>
+</body>
+</html>
